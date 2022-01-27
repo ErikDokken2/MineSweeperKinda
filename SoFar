@@ -1,4 +1,5 @@
 
+
 import java.util.*;
 
 public class main {
@@ -59,12 +60,11 @@ public class main {
         if(!myBored[k].equals("."))return solve(k+1);
 
         //Try to place a bomb in this spot
-        for(int x = 1; x <= numCells;x++){
-            myBored[x] = "*";
-            //if it doesn't break the board continue
-            if(isValid(x)){
+        myBored[k] = "*";
+        //if it doesn't break the board continue
+        if(isValid(k)){
 
-            }
+
         }
 
         return true;
